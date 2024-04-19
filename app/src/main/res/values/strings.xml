@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BoardSergei</string>
+    <string name="title_home">Home</string>
+    <string name="title_board">Board</string>
+</resources>

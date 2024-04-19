@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightcolor"
+    android:orientation="vertical"
+    android:padding="22dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="64dp"
+        android:background="#EDEAEF"
+        android:gravity="center_horizontal"
+        android:text="Let's go..."
+        android:textAlignment="center"
+        android:textColor="#2384E4"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="25dp"
+        android:background="#EDEAEF"
+        android:gravity="center_horizontal"
+        android:text="category"
+        android:textAlignment="center"
+        android:textColor="#2384E4"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="25dp"
+        android:background="#EDEAEF"
+        android:gravity="center_horizontal"
+        android:text="Price for 1 person"
+        android:textAlignment="center"
+        android:textColor="#2384E4"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/participants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="25dp"
+        android:background="#EDEAEF"
+        android:gravity="center_horizontal"
+        android:text="Participants"
+        android:textAlignment="center"
+        android:textColor="#2384E4"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="25dp"
+        android:background="#EDEAEF"
+        android:gravity="center_horizontal"
+        android:text="Link"
+        android:textAlignment="center"
+        android:textColor="#2384E4"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/zoom_btn"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/lupa" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="What can I do today?"
+        app:cornerRadius="24dp"
+        android:backgroundTint="#EDEAEF"
+        android:textColor="#2384E4"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
