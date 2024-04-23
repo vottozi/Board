@@ -62,9 +62,9 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
             }
 
             binding.btnStart.setOnClickListener(v -> {
-                new Prefs((Activity)itemView.getContext()).saveBoardState();
+                new Prefs((Activity) itemView.getContext()).saveBoardState();
 
-                navController = Navigation.findNavController((Activity) itemView.getContext(), R.id.nav_view);
+                navController = Navigation.findNavController((Activity) itemView.getContext(), R.id.nav_host);
                 navController.navigate(R.id.action_navigation_board_to_navigation_home);
             });
 

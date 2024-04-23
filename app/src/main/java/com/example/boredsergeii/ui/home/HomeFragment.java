@@ -71,7 +71,7 @@ public class HomeFragment extends Fragment {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(binding.link.getText().toString()));
                     startActivity(intent);
                 } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(requireActivity(), "Link is not", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(requireActivity(), "There is no link", Toast.LENGTH_SHORT).show();
                 }
             }
         });

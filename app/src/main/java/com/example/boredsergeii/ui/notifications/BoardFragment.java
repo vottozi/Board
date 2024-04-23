@@ -1,5 +1,6 @@
 package com.example.boredsergeii.ui.notifications;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,7 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.boredsergeii.Prefs;
@@ -18,6 +20,8 @@ import com.example.boredsergeii.databinding.FragmentBoardBinding;
 public class BoardFragment extends Fragment {
 
     FragmentBoardBinding binding;
+    ViewPager2 viewPager2;
+    NavController navController;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -61,6 +65,7 @@ public class BoardFragment extends Fragment {
             }
         });
     }
+
 
     private void changeColor() {
         if (binding.viewPager2.getCurrentItem() == 0) {
